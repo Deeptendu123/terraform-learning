@@ -12,12 +12,6 @@ variable "secret_key" {
   sensitive = true
 }
 
-variable "ec2_ami_id" {
-  type = string
-  description = "AMI id for ec2"
-  default = "ami-0c7217cdde317cfec"
-}
-
 variable "ec2_tags" {
   type = map
   description = "Tag for ec2"

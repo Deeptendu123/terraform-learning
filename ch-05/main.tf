@@ -29,7 +29,7 @@ data "aws_ami" "ubuntu" {
   }
 }
 
-// Uncomment the below blocks to verify the image id and name, terraform plan
+// Uncomment the below blocks to verify the image id and name, run terraform plan
 /**
 output "ubuntu_ami_id" {
   value = data.aws_ami.ubuntu.id
