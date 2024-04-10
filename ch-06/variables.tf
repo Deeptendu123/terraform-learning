@@ -18,6 +18,12 @@ variable "ec2_ami_id" {
   default = "ami-0c7217cdde317cfec"
 }
 
+variable "subnet_id" {
+  type = string
+  description = "Subnet Id"
+  default = "sub-0834cb805a6353469"
+}
+
 variable "vpc_security_group_ids" {
   type = set(string)
   description = "VPC seccurity ids"
