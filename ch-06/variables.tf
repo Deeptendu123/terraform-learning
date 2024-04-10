@@ -18,10 +18,8 @@ variable "ec2_ami_id" {
   default = "ami-0c7217cdde317cfec"
 }
 
-variable "ec2_tags" {
-  type = map(string)
-  description = "Tag for ec2"
-  default = {
-    "name" = "My EC2"
-  }
+variable "vpc_security_group_ids" {
+  type = set(string)
+  description = "VPC seccurity ids"
+  default = ["sg-0834cb805a6353469"]
 }
