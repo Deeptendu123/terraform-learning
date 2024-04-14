@@ -21,11 +21,19 @@ variable "ec2_ami_id" {
 variable "subnet_id" {
   type = string
   description = "Subnet Id"
-  default = "sub-0834cb805a6353469"
+  default = "subnet-05f8b8bd95c6bae79"
 }
 
 variable "vpc_security_group_ids" {
   type = set(string)
   description = "VPC seccurity ids"
-  default = ["sg-0834cb805a6353469"]
+  default = ["sg-079707e9a7f3e2c6c"]
+}
+
+variable "ec2_tags" {
+  type = map
+  description = "Tag for ec2"
+  default = {
+    "name" = "My EC2"
+  }
 }

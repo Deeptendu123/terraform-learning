@@ -20,7 +20,10 @@ module "ec2-instance" {
 
   name = "My EC2"
   ami = var.ec2_ami_id
+  instance_count         = 1
   instance_type = "t2_micro"
   vpc_security_group_ids = var.vpc_security_group_ids
   subnet_id = var.subnet_id
+
+  tags = var.ec2_tags
 }
